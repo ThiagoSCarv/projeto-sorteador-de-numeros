@@ -1,0 +1,22 @@
+header {
+  margin-block: 2.75rem 2.875rem;
+  & .logo {
+    display: flex;
+    gap: .75rem;
+    justify-content: center;
+    & h2 {
+      color: var(--content-primary);
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (width >= 80em) {
+  header {
+    margin-block: 4.75rem 5.625rem;
+    & .logo{
+      justify-content: start;
+    }
+  }
+}

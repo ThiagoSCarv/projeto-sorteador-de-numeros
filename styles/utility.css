@@ -1,0 +1,51 @@
+.px-md {
+  padding-inline: var(--px-md);
+}
+
+.ff-sora {
+  font-family: var(--ff-sora);
+}
+.ff-roboto-mono {
+  font-family: var(--ff-roboto-mono);
+}
+.ff-roboto-flex {
+  font-family: var(--ff-roboto-flex);
+}
+.fz-2xl {
+  font-size: var(--fz-2xl);
+}
+.fz-xl {
+  font-size: var(--fz-xl);
+}
+.fz-lg {
+  font-size: var(--fz-lg);
+}
+.fz-md {
+  font-size: var(--fz-md);
+}
+.fz-sm {
+  font-size: var(--fz-sm);
+}
+.fz-esm {
+  font-size: var(--fz-esm);
+}
+.fw-extra-bold {
+  font-weight: var(--fw-extra-bold);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.lh-150 {
+  line-height: var(--lh-150);
+}
+.lh-130 {
+  line-height: var(--lh-130);
+}
+
+@media (width >= 80em) {
+  
+}

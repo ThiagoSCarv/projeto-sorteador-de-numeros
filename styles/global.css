@@ -38,8 +38,26 @@
   --fw-extra-bold: 800;
   --fw-bold: 700;
   --fw-medium: 500;
+  --px-md: 2.25rem;
+  --lh-150: 150%;
+  --lh-130: 130%;
 }
 
 body {
   margin: auto;
+  max-width: 24.375rem;
+  height: 100vh;
+  background: url(../assets/images/background.png);
+  background-color: var(--background-primary);
+}
+
+
+@media (width >= 80em) {
+  :root {
+    --px-md: 8.375rem;
+
+  }
+  body {
+    max-width: 80em;
+  }
 }
