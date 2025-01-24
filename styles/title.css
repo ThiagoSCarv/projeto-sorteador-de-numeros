@@ -1,0 +1,22 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 2.625rem;
+  & span {
+    background: var(--gradient-content);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+  }
+  & h1 {
+    color: var(--content-primary);
+    text-transform: uppercase;
+  }
+}
+
+@media (width >= 80em) {
+  .title {
+    
+  }
+}

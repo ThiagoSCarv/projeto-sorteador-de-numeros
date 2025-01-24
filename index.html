@@ -16,5 +16,51 @@
       <h2 class="lh-130 ff-sora fw-extra-bold">numbers</h2>
     </div>
   </header>
+  <main class="px-md">
+    <section>
+      <header class="title">
+        <span class="ff-roboto-mono fz-sm lh-150 fw-bold">Online - gratuito</span>
+        <h1 class="ff-roboto-mono fz-2xl lh-130 fw-extra-bold">Sorteador
+          de números</h1>
+      </header>
+    </section>
+    <section>
+      <form action="post" enctype="multipart/form-data">
+        <fieldset class="draw-input">
+          <legend class="ff-roboto-flex fz-md fw-bold lh-150">
+            Quero sortear:
+          </legend>
+          <p class="ff-roboto-flex fz-esm fw-medium lh-150">
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
+          </p>
+
+          <div class="input-numbers">
+            <div class="input-wrapper">
+              <label class="ff-roboto-flex fz-md fw-bold lh-150" for="max-numbers">números</label>
+              <div class="gradient-input">
+                <input class="ff-sora fz-lg fw-bold lh-130"  id="max-numbers" name="max-numbers" type="number">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="ff-roboto-flex fz-md fw-bold lh-150" for="min-range">de</label>
+              <div class="gradient-input">
+                <input class="ff-sora fz-lg fw-bold lh-130"  id="min-range" name="min-range" type="number">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="ff-roboto-flex fz-md fw-bold lh-150" for="max-range">de</label>
+              <div class="gradient-input">
+                <input class="ff-sora fz-lg fw-bold lh-130" id="max-range" name="max-range" type="number">
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <section></section>
+  </main>
 </body>
 </html>

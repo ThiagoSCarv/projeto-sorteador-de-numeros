@@ -29,8 +29,7 @@
   --ff-sora: "Sora", serif;
   --ff-roboto-mono: "Roboto Mono", serif;
   --ff-roboto-flex: "Roboto Flex", serif;
-  --fz-2xl: 4.5rem;
-  --fz-xl: 2.5rem;
+  --fz-2xl: 2.5rem;
   --fz-lg: 2rem;
   --fz-md: 1.25rem;
   --fz-sm: 1rem;
@@ -41,6 +40,11 @@
   --px-md: 2.25rem;
   --lh-150: 150%;
   --lh-130: 130%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -55,7 +59,8 @@ body {
 @media (width >= 80em) {
   :root {
     --px-md: 8.375rem;
-
+    --fz-2xl: 4.5rem;
+    --fz-esm: 1rem;
   }
   body {
     max-width: 80em;
