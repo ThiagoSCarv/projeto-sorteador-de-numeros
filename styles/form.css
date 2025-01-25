@@ -1,3 +1,5 @@
+@import url(forms/input.css);
+
 form {
   text-align: start;
   & fieldset {
@@ -8,59 +10,6 @@ form {
     }
     & p {
       color: var(--content-tertiary);
-    }
-  }
-  & .input-numbers {
-    margin-top: 2.5rem;
-    display: grid;
-    grid-auto-flow: column;
-    gap: .75rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    & .input-wrapper {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      & label {
-        color: var(--content-secondary);
-        text-transform: uppercase;
-        margin-bottom: .5rem;
-      }
-      & .gradient-input {
-        position: relative;
-        display: inline-block;
-        border-radius: .5rem;
-        background: var(--background-secondary);
-        padding: 1px;
-      }
-      & .gradient-input input {
-        width: 100%;
-        padding-block: 1rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: .5rem; 
-        outline: none; 
-        background-color: var(--background-secondary);
-        color: var(--content-primary);
-        text-align: center;
-      }
-    }
-    & .input-wrapper:hover {
-      & label {
-        color: var(--content-brand);
-      }
-      & .gradient-input {
-        background: var(--gradient-border);
-      }
-      & .gradient-input input {
-        background-color: var(--background-tertiary);
-      }
-    }
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        margin: 0; 
     }
   }
 }
