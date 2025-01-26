@@ -1,0 +1,55 @@
+.toggle-wrapper {
+  margin-top: 1.375rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  & small {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: .75rem;
+    color: var(--content-primary);
+    line-height: 150%;
+  }
+}
+
+.switch {
+  appearance: none;
+  width: 1.875rem;
+  height: 1.25rem;
+  background-color: var(--content-tertiary);
+  border-radius: 3.125rem;
+  border: 1px solid var(--input-stroke);
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  width: .875rem;
+  height: .875rem;
+  border-radius: 50%;
+  background-color: var(--content-primary);
+  left: 3px;
+  top: 3px;
+  transition: .3s;
+}
+
+.switch::after {
+  position: absolute;
+  color: var(--content-primary);
+  left: 60px;
+  top: 5px;
+  transition: .3s;
+}
+
+.switch:checked {
+  background: var(--gradient-background);
+}
+
+.switch:checked::before {
+  position: absolute;
+  background-color: var(--content-tertiary);
+  left: 14px;
+}

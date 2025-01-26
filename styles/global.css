@@ -29,14 +29,17 @@
   --ff-sora: "Sora", serif;
   --ff-roboto-mono: "Roboto Mono", serif;
   --ff-roboto-flex: "Roboto Flex", serif;
+  --ff-inter: "Inter", serif;
   --fz-2xl: 2.5rem;
   --fz-lg: 2rem;
   --fz-md: 1.25rem;
   --fz-sm: 1rem;
   --fz-esm: .875rem;
+  --fz-xsm: .75rem;
   --fw-extra-bold: 800;
   --fw-bold: 700;
   --fw-medium: 500;
+  --fw-regular: 400;
   --px-md: 2.25rem;
   --lh-150: 150%;
   --lh-130: 130%;
