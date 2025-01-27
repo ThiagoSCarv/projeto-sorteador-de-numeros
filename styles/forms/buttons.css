@@ -1,0 +1,107 @@
+.btn-container {
+  margin-top: 2.5rem;
+  position: relative;
+  width: 100%;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  & .btn {
+    width: 99.9%;
+    background: var(--background-tertiary);
+    border: none;
+    border-radius: .5rem;
+    color: var(--content-primary);
+    text-transform: uppercase;
+    padding-block: .8125rem;
+  }
+
+  & .btn-1::after {
+    position: absolute;
+    content: url(../../assets/icons/arrow.svg);
+    left: 215px;
+    top: 17px;
+  }
+
+  & .gradient-border {
+    inset: 0;
+  }
+}
+
+.btn-container:hover {
+  & .btn {
+    background: var(--background-secondary);
+  }
+  & .gradient-border {
+    background: var(--gradient-border);
+    border-radius: .5rem;
+    animation: background-move 0.7s ease both infinite;
+  }
+  & .btn-1::after {
+    animation: arrow-move 1s ease both infinite;
+  }
+}
+
+@keyframes background-move {
+  0% {
+    --gradient-border: linear-gradient(90deg, 
+    var(--accent-green)40%,
+    var(--accent-lime)5%,
+    var(--accent-red)10%,
+    var(--accent-pink)5%,
+    var(--accent-blue)40%);
+  }
+  20% {
+    --gradient-border: linear-gradient(90deg, 
+    var(--accent-green)30%,
+    var(--accent-lime)5%,
+    var(--accent-red)10%,
+    var(--accent-pink)5%,
+    var(--accent-blue)50%);
+  }
+  45% {
+    --gradient-border: linear-gradient(90deg, 
+    var(--accent-green)50%,
+    var(--accent-lime)5%,
+    var(--accent-red)10%,
+    var(--accent-pink)5%,
+    var(--accent-blue)30%);
+  }
+  70% {
+    --gradient-border: linear-gradient(90deg, 
+    var(--accent-green)40%,
+    var(--accent-lime)5%,
+    var(--accent-red)10%,
+    var(--accent-pink)5%,
+    var(--accent-blue)40%);
+  }
+  90% {
+    --gradient-border: linear-gradient(90deg, 
+                      var(--accent-green)0%,
+                      var(--accent-lime)14.84%,
+                      var(--accent-red)32.15%,
+                      var(--accent-pink)65.79%,
+                      var(--accent-blue)84.58%);
+  }
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(10%);
+  }
+  40% {
+    transform: translateX(15%);
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+

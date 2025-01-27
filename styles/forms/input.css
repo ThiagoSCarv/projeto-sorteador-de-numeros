@@ -18,10 +18,6 @@
       position: relative;
       padding: 1px;
       & .gradient-border {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
         top: -0.25px;
         left: -1px;
       }
